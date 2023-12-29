@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import Grid from "./Grid";
 import Card from "./Card";
@@ -9,7 +10,7 @@ interface Props {
 
 const GridCard = () => {
     return (
-        <Card containerStyle="w-[100%] animate-pulse">
+        <Card containerStyle="w-full animate-pulse">
             <div className="bg-slate-50 h-[200px] md:h-[150px] lg:h-[200px]"></div>
             <div className="p-2 pt-5 border-t-[1px] border-t-gray-200 bg-white h-[50px]">
                 <div className="h-3 bg-slate-100 rounded-xl"></div>
