@@ -4,7 +4,7 @@ import React from 'react'
 
 const Loading = () => {
   return (
-    <ListLoading type="grid" count={20} />
+    <ListLoading type="grid" count={18} />
   )
 }
 
