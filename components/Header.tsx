@@ -14,7 +14,7 @@ const Header = () => {
                     <Link href='' className="text-base text-white font-normal hover:font-semibold transition-all">About</Link>
                 </li>
                 <li>
-                    <Link href='' className="text-base text-white font-normal hover:font-semibold transition-all">FAQ</Link>
+                    <Link href='/faq' className="text-base text-white font-normal hover:font-semibold transition-all">FAQ</Link>
                 </li>
             </ul>
         </div>
