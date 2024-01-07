@@ -11,6 +11,9 @@ const Header = () => {
                     <Link href='/' className="text-base text-white font-normal hover:font-semibold transition-all">Home</Link>
                 </li>
                 <li>
+                    <Link href='/users' className="text-base text-white font-normal hover:font-semibold transition-all">Users</Link>
+                </li>
+                <li>
                     <Link href='' className="text-base text-white font-normal hover:font-semibold transition-all">About</Link>
                 </li>
                 <li>
