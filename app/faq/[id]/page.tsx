@@ -1,11 +1,14 @@
 import Card from "@/components/ui/Card";
 import { DB_NAME, FAQ_COLLECTION } from "@/constants";
 import { connectToDatabase } from "@/helpers/db";
-import { FAQItem } from "@/types/faq";
 import { ObjectId } from "mongodb";
 import React from "react";
 
-const dynamicParams = true;
+export const dynamicParams = true;
+
+export async function generateStaticParams() {
+    return [{id: '1'}, {id: '2'}, {id: '3'}, {id: 4}];
+}
 
 type Props = {
     params: {
@@ -16,7 +19,7 @@ type Props = {
 //     const response = await fetch(`http://localhost:3000/api/faq/${id}`, {
 //             cache: "force-cache",
 //         });
-//         const faq = response.json();
+//         const faq = await response.json();
 //         return faq.data;
 // };
 
