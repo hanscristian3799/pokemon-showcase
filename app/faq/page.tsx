@@ -5,10 +5,13 @@ import React from "react";
 import { FaChevronRight } from "react-icons/fa6";
 
 // const getAllFaq = async () => {
-//     const response = await fetch("http://localhost:3000/api/faq/", {
-//         cache: "force-cache",
+//     const response = await fetch('http://localhost:3000/api/faq/', {
+//         // cache: "force-cache",
+//         next: {
+//             revalidate: 60,
+//         }
 //     });
-//     const faq = response.json();
+//     const faq = await response.json();
 //     return faq.data;
 // };
 
@@ -33,7 +36,7 @@ const FAQ = async () => {
                 FAQ(Frequently Asked Questions)
             </h1>
             <div>
-                {faqs.map((faq) => (
+                {faqs.map((faq: any) => (
                     <ul
                         key={faq._id.toString()}
                         className="bg-main-red p-4 mb-5 rounded-md cursor-pointer transition-all duration-300 active:opacity-80"
